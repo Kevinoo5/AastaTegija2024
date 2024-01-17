@@ -26,6 +26,7 @@ h2 {
     margin-right: auto;
     max-width: 100%;
     text-align: left;
+    z-index: 1;
 }
 .container {
     max-width: 1200px;
@@ -36,6 +37,8 @@ h2 {
 /* Top navigation */
 .topnav {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: #000000;
@@ -56,6 +59,10 @@ h2 {
     margin: 0 40px;
 }
 
+.topnav a:hover {
+    color: #ababab;
+}
+
 /* Banner section */
 
 .btn-black {
@@ -73,6 +80,16 @@ h2 {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.btn-black:hover {
+    color: #ffffff;
+    background-color: #373B41;
+}
+
+.btn-black:active {
+    background:#59606D;
+    color: white;
 }
 
 .banner-text {
@@ -108,6 +125,7 @@ h2 {
     line-height: 36.56px;
     color: #000000;
     margin: 25px 5px;
+    padding-top: 100px;
 }
 
 .activities p {
@@ -124,11 +142,9 @@ h2 {
 .pic-box {
     width: 285px;
     height: 285px;
-    background-color: #ffffff;
     border-radius: 5px;
     display: inline-block;
     margin: 8px;
-    position: relative;
     padding: 0 0 100px;
 
 }
@@ -146,11 +162,113 @@ h2 {
     height: 64px;
     font-weight: 500;
     border: none;
+    background-color: #F5F7FB;
 }
 
 .pic-button:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
+}
+
+/* Schedule */
+
+.schedule {
+    position: relative;
+}
+
+.schedule h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.56px;
+    color: #000000;
+    margin-left: 18%;
+    padding-top: 100px;
+}
+
+
+#schedule-table {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    width: 65%;
+    margin: 50px auto 0;
+    border-collapse: collapse;
+}
+
+#schedule-table tr {
+    height: 70px;
+}
+
+#schedule-table tr:first-child th {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 40px;
+    width: auto;
+}
+
+#schedule-table th {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 40px;
+    width: auto;
+}
+
+#schedule-table td {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 30px 0 25px;
+    width: auto;
+}
+
+#schedule-table #date {
+    font-weight: bold;
+    text-align: center;
+}
+
+#schedule-table tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+#schedule-table tr:nth-child(odd) {
+    background-color: #F5F7FB;
+}
+
+/* For players */
+
+.info-box {
+    width: 1200px;
+    height: 238px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #F5F7FB;
+
+}
+
+.info-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.56px;
+    color: #000000;
+    margin: 25px 5px;
 }
 
 @media (max-width: 768px) {
