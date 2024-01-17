@@ -1,4 +1,3 @@
-
 body {
     background-color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
@@ -52,4 +51,37 @@ h2 {
     margin: 0 40px;
 }
 
+.btn-black {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 40px;
+    width: 168px;
+    height: 46px;
+    border-radius: 2px;
+    cursor: pointer;
+}
 
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow-wrap: inherit;
+}
+
+.banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    margin: 0;
+}
