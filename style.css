@@ -28,8 +28,8 @@ h2 {
     text-align: left;
 }
 .container {
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin: 0 auto; /* Center the container */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -70,6 +70,7 @@ h2 {
     margin: 0 40px;
     width: 168px;
     height: 46px;
+    border: none;
     border-radius: 2px;
     cursor: pointer;
 }
@@ -120,7 +121,6 @@ h2 {
 }
 
 
-
 .pic-box {
     width: 285px;
     height: 285px;
@@ -146,6 +146,11 @@ h2 {
     height: 64px;
     font-weight: 500;
     border: none;
+}
+
+.pic-button:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
 }
 
 @media (max-width: 768px) {
