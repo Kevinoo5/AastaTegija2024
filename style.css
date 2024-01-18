@@ -79,53 +79,49 @@ h2 {
     overflow: hidden;
 }
 
-.parallelogram-lb {
+.parallelogram-lb,
+.parallelogram-lb-small,
+.parallelogram-db,
+.parallelogram-yellow,
+.parallelogram-red {
     position: absolute;
-    bottom: 0;
-    left: 300px;
-    width: 350px;
-    height: 745px;
+    height: 745px; /* Adjust the height as needed */
     transform: skew(-20deg);
+}
+
+.parallelogram-lb {
+    bottom: 0;
+    left: 10%; /* Adjust the left position in percentage */
+    width: 15%; /* Adjust the width in percentage */
     background: #20C4F4;
 }
 
 .parallelogram-lb-small {
-    position: relative;
     bottom: 100%;
-    left: 25%;
-    width: 20%;
+    left: 5%; /* Adjust the left position in percentage */
+    width: 3%; /* Adjust the width in percentage */
     height: 150%;
-    transform: skew(-20deg);
     background: #20C4F4;
 }
 
 .parallelogram-db {
-    position: absolute;
     bottom: 0;
-    left: -100px;
-    width: 400px;
-    height: 745px;
-    transform: skew(-20deg);
+    left: -10%; /* Adjust the left position in percentage */
+    width: 20%; /* Adjust the width in percentage */
     background: #0089CF;
 }
 
 .parallelogram-yellow {
-    position: absolute;
     bottom: 0;
-    right: 250px;
-    width: 400px;
-    height: 745px;
-    transform: skew(-20deg);
+    right: 10%; /* Adjust the right position in percentage */
+    width: 18%; /* Adjust the width in percentage */
     background: #FFF200;
 }
 
 .parallelogram-red {
-    position: absolute;
     bottom: 0;
-    right: -150px;
-    width: 400px;
-    height: 745px;
-    transform: skew(-20deg);
+    right: -10%; /* Adjust the right position in percentage */
+    width: 20%; /* Adjust the width in percentage */
     background: #EF4044;
 }
 
@@ -169,6 +165,11 @@ h2 {
     align-items: center;
     height: 80vh;
     overflow-wrap: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
 }
 
 .banner-title {
