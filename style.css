@@ -496,15 +496,26 @@ footer img {
 
 
 @media (max-width: 768px) {
-    /* Existing styles for tablets and smaller screens */
-
-    /* Additional styles for mobile view */
-    body {
-        font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
     }
 
-    .topnav {
-        padding: 10px;
+    .topnav img {
+        margin: 10px 0;
+        max-width: 80%;
+    }
+
+    .topnav a {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .banner-text {
+        padding: 20px;
+        height: auto;
     }
 
     .banner-title {
@@ -512,13 +523,9 @@ footer img {
         line-height: 45px;
     }
 
-    .banner-text {
-        height: auto;
-        padding: 20px;
-    }
-
     .btn-black {
         width: 100%;
+        margin: 10px 0;
     }
 
     .activities h2 {
@@ -554,7 +561,7 @@ footer img {
     }
 
     .info-box button {
-        margin: 0;
+        margin: 10px 0;
     }
 
     .news-box {
