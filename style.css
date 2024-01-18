@@ -307,7 +307,7 @@ h2 {
     width: auto;
 }
 
-#schedule-table #date {
+#schedule-table .date {
     font-weight: bold;
     text-align: center;
 }
