@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -26,9 +26,9 @@
     <div class="parallelogram-lb"></div>
     <div class="banner-text">
         <h1 class="banner-title">Unity in Sport!</h1>
-        <p>A competition between Baltic states' <br> vocational colleges.</p>
+        <p>A competition between Baltic states</p>
         <p>25-27. April 2024 in Tartu</p>
-        <button type="button" class="btn-black" href="#schedule">Check the Schedule</button>
+        <button type="button" class="btn-black" onclick="redirectToSchedule()">Check the Schedule</button>
     </div>
     <div class="parallelogram-yellow"></div>
     <div class="parallelogram-red"></div>
@@ -205,6 +205,13 @@
         <p>© EESTI KUTSEKOOLISPORDI LIIT MTÜ</p>
     </div>
 </footer>
+
+<script>
+    function redirectToSchedule() {
+        // Assuming you have an element with the ID "schedule"
+        window.location.href = '#schedule';
+    }
+</script>
 
 </body>
 </html>
