@@ -45,6 +45,7 @@ h2 {
     background-color: #000000;
     height: 113px;
     padding: 0 80px;
+    z-index: 100;
 }
 
 .topnav img {
@@ -67,6 +68,62 @@ h2 {
 }
 
 /* Banner section */
+
+.banner {
+    height: 745px;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallelogram-lb {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    width: 350px;
+    height: 745px;
+    transform: skew(-20deg);
+    background: #20C4F4;
+}
+
+.parallelogram-lb-small {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    width: 350px;
+    height: 745px;
+    transform: skew(-20deg);
+    background: #20C4F4;
+}
+
+.parallelogram-db {
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    width: 400px;
+    height: 745px;
+    transform: skew(-20deg);
+    background: #0089CF;
+}
+
+.parallelogram-yellow {
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+    width: 400px;
+    height: 745px;
+    transform: skew(-20deg);
+    background: #FFF200;
+}
+
+.parallelogram-red {
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+    width: 400px;
+    height: 745px;
+    transform: skew(-20deg);
+    background: #EF4044;
+}
 
 .btn-black {
     font-family: 'Montserrat', sans-serif;
@@ -251,6 +308,33 @@ h2 {
 
 #schedule-table tr:nth-child(odd) {
     background-color: #F5F7FB;
+}
+
+.schedule-btn {
+    all: unset;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px auto 50px;
+    width: 115px;
+    height: 46px;
+    border: black 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.schedule-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 #C4C4C4;
+}
+
+.schedule-btn:active {
+    cursor: pointer;
+    background: #C4C4C4;
 }
 
 /* For players */
