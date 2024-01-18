@@ -434,7 +434,7 @@ h2 {
 .partners img {
     width: 230px;
     height: 99px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
     margin-bottom: 15px;
     margin-left: 10%;
@@ -448,6 +448,39 @@ h2 {
     color: #000000;
     margin-left: 18%;
     padding-top: 100px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000000;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 99px;
+    margin: auto;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-bottom {
+    background-color: white;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
