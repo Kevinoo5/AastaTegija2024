@@ -90,11 +90,11 @@ h2 {
 }
 
 .parallelogram-lb-small {
-    position: absolute;
-    bottom: 0;
-    left: 300px;
-    width: 350px;
-    height: 745px;
+    position: relative;
+    bottom: 100%;
+    left: 25%;
+    width: 20%;
+    height: 150%;
     transform: skew(-20deg);
     background: #20C4F4;
 }
@@ -349,6 +349,7 @@ h2 {
 /* For players */
 
 .info-box {
+    overflow: hidden;
     width: 1200px;
     height: 238px;
     margin: auto;
@@ -363,7 +364,7 @@ h2 {
     line-height: 36px;
     color: #000000;
     margin-right: 200px;
-    padding-top: 90px;
+    padding-top: 5%;
     text-align: right;
 }
 
